@@ -97,23 +97,12 @@
             <p>Incluye DJ, cabina fotográfica, cantina y ornamentación.</p>
         </div>
 
-        <div class="section">
-            <h2>Formulario de Restricciones Alimenticias</h2>
-            <form action="#" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="acompanante">Nombre del acompañante (si aplica):</label>
-                <input type="text" id="acompanante" name="acompanante">
-                
-                <label for="restricciones">Restricciones alimenticias:</label>
-                <textarea id="restricciones" name="restricciones" rows="4"></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </div>
-    
+<div class="section">
+    <h2>Encuesta de Opinión</h2>
+    <p>Por favor, completa la encuesta para mejorar el evento:</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe42bCXndhWqYFhSV2LxpGk3-TfRXOF72LZjB1STQV2hRorVw/viewform?usp=header" width="100%" height="500px" style="border:none;"></iframe>
+</div>
+      
     <footer>
         <p>&copy; 2025 Escuela de Ingenieros - Ejército de Chile</p>
     </footer>
