@@ -79,7 +79,8 @@
         
         <div class="section">
             <h2>Costos</h2>
-            <p>Cuota por persona: $15,000</p>
+            <p>Cuota por persona: $15,000 en efectivo</p>
+            <p>Cuota por persona: $19,000 en descuento en 2 cuotas (Abril y Mayo)</p>
             <p>Incluye DJ, cabina fotográfica, cantina y ornamentación.</p>
         </div>
         
