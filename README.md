@@ -53,6 +53,25 @@
             bottom: 0;
             width: 100%;
         }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -61,9 +80,8 @@
     </header>
     
     <div class="container">
-        <div class="section">
-            <h2>Asistentes</h2>
-            <p>Total de asistentes: 49 personas</p>
+        <div class="image-container">
+            <img src="https://source.unsplash.com/800x400/?party,military" alt="Fiesta de Bienvenida">
         </div>
         
         <div class="section">
@@ -78,11 +96,21 @@
             <p>Cuota por persona: $15,000</p>
             <p>Incluye DJ, cabina fotográfica, cantina y ornamentación.</p>
         </div>
-        
+
         <div class="section">
-            <h2>Encuesta de Opinión</h2>
-            <p>Por favor, participa en nuestra encuesta en GitHub:</p>
-            <a href="https://github.com/tu-repositorio/encuesta-fiesta" target="_blank">Ir a la Encuesta</a>
+            <h2>Formulario de Restricciones Alimenticias</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="acompanante">Nombre del acompañante (si aplica):</label>
+                <input type="text" id="acompanante" name="acompanante">
+                
+                <label for="restricciones">Restricciones alimenticias:</label>
+                <textarea id="restricciones" name="restricciones" rows="4"></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </div>
     
