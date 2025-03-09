@@ -3,67 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encuesta Fiesta de Bienvenida</title>
+    <title>Fiesta Bienvenida Oficiales 2025</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
+            background-color: #f0f8ff;
+            color: #00274d;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004080;
+            color: white;
             padding: 20px;
+            text-align: center;
         }
         .container {
-            max-width: 500px;
+            width: 80%;
             margin: auto;
-            background: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px 0px #aaa;
         }
-        .button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        .section {
+            background-color: #e6f2ff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #00274d;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
             margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #004080;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Fiesta de Bienvenida Oficiales 2025</h1>
+    </header>
+    
     <div class="container">
-        <h2>Encuesta: Fiesta de Bienvenida</h2>
-        <form id="surveyForm">
-            <label>Fecha preferida:</label><br>
-            <input type="date" id="fecha" required><br><br>
-            
-            <label>Tipo de comida preferida:</label><br>
-            <select id="comida" required>
-                <option value="Buffet">Buffet</option>
-                <option value="Parrilla">Parrilla</option>
-                <option value="Comida Internacional">Comida Internacional</option>
-            </select><br><br>
-            
-            <label>Estilo de música:</label><br>
-            <input type="radio" name="musica" value="Clásica" required> Clásica<br>
-            <input type="radio" name="musica" value="Rock"> Rock<br>
-            <input type="radio" name="musica" value="Electrónica"> Electrónica<br>
-            <input type="radio" name="musica" value="Latina"> Latina<br><br>
-            
-            <label>Ubicación preferida:</label><br>
-            <input type="text" id="ubicacion" placeholder="Ej. Salón de eventos" required><br><br>
-            
-            <button type="submit" class="button">Enviar</button>
-        </form>
-        <p id="mensaje"></p>
+        <div class="section">
+            <h2>Asistentes</h2>
+            <p>Total de asistentes: 49 personas</p>
+        </div>
+        
+        <div class="section">
+            <h2>Menú</h2>
+            <p><strong>Entrada:</strong> Timbal de quinua con choclo, palta y camarones.</p>
+            <p><strong>Plato de fondo:</strong> Carne a la cacerola con verduras y papas gratinadas.</p>
+            <p><strong>Postre:</strong> Leche asada, mousse de chocolate, cheesecake y torta.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Costos</h2>
+            <p>Cuota por persona: $15,000</p>
+            <p>Incluye DJ, cabina fotográfica, cantina y ornamentación.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Encuesta de Opinión</h2>
+            <p>Por favor, participa en nuestra encuesta en GitHub:</p>
+            <a href="https://github.com/tu-repositorio/encuesta-fiesta" target="_blank">Ir a la Encuesta</a>
+        </div>
     </div>
-
-    <script>
-        document.getElementById("surveyForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            document.getElementById("mensaje").innerText = "¡Gracias por tu respuesta!";
-            document.getElementById("surveyForm").reset();
-        });
-    </script>
+    
+    <footer>
+        <p>&copy; 2025 Escuela de Ingenieros - Ejército de Chile</p>
+    </footer>
 </body>
 </html>
