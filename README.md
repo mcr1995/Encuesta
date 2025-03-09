@@ -49,9 +49,6 @@
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
         form {
             display: flex;
@@ -72,11 +69,22 @@
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
+        .bottom-image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .bottom-image-container img {
+            width: 100%;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Fiesta de Bienvenida Oficiales 2025</h1>
+        <img src="image.png" alt="Escuela de Ingenieros" width="150">
     </header>
     
     <div class="container">
@@ -96,13 +104,12 @@
             <p>Cuota por persona: $15,000</p>
             <p>Incluye DJ, cabina fotográfica, cantina y ornamentación.</p>
         </div>
-
-<div class="section">
-    <h2>Encuesta de Opinión</h2>
-    <p>Por favor, completa la encuesta para mejorar el evento:</p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe42bCXndhWqYFhSV2LxpGk3-TfRXOF72LZjB1STQV2hRorVw/viewform?usp=header" width="100%" height="500px" style="border:none;"></iframe>
-</div>
-      
+    </div>
+    
+    <div class="bottom-image-container">
+        <img src="WhatsApp Image 2025-03-06 at 09.30.17.jpeg" alt="Instalaciones del evento">
+    </div>
+    
     <footer>
         <p>&copy; 2025 Escuela de Ingenieros - Ejército de Chile</p>
     </footer>
